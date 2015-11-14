@@ -3,9 +3,11 @@ source 'https://rubygems.org'
 gem 'rails', '4.1.1'
 gem 'sass-rails', '~> 4.0.3'
 gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.0.0'
+gem 'coffee-rails', ' 4.0.1'
 gem 'jquery-rails'
 gem 'turbolinks'
+# Eventmachine gem for Mac needs version 1.0.8
+gem 'eventmachine', '1.0.8'
 gem 'jbuilder', '~> 2.0'
 gem 'devise'
 gem 'private_pub'
@@ -20,6 +22,6 @@ end
 
 group :production do
   gem 'rails_12factor'
-  gem 'pg'
+#  gem 'pg'
 end
 
